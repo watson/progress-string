@@ -46,7 +46,7 @@ These are the options:
 - `width` - (integer, default: 42) The width of the progress bar in chars
 - `incomplete` - (string, default: `-`) The char used to indicate the
   incomplete part of the progress bar
-- `complete` - (string, default: `=`) The car used to indicate the
+- `complete` - (string, default: `=`) The char used to indicate the
   completed part of the progress bar
 
 ### `var str = bar(value)`
