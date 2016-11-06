@@ -13,9 +13,7 @@
   ],
   "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
   "license": "MIT",
-  "dependencies": {
-    "ansi-diff-stream": "^1.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "standard": "^8.5.0",
     "tape": "^4.6.2"
