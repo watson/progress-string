@@ -1,0 +1,31 @@
+{
+  "name": "progress-string",
+  "version": "0.0.0",
+  "description": "Get a progess bar as a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "keywords": [
+    "progress",
+    "bar",
+    "cli"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "dependencies": {
+    "ansi-diff-stream": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^8.5.0",
+    "tape": "^4.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson/progress-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/watson/progress-string/issues"
+  },
+  "homepage": "https://github.com/watson/progress-string#readme"
+}
