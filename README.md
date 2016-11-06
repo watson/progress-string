@@ -49,10 +49,13 @@ These are the options:
 - `complete` - (string, default: `=`) The car used to indicate the
   completed part of the progress bar
 
-### `bar(value)`
+### `var str = bar(value)`
 
 Call the `bar` function with the `value` you want to the generated
 progress bar to have.
+
+The `bar` function will return a string representation of the progress
+bar.
 
 ## License
 
