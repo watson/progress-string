@@ -35,15 +35,24 @@ diff.pipe(process.stdout)
 
 ## API
 
-```js
-progress(value, max)
-```
+### `var bar = progress(options)`
 
-This module exposes a function that takes two arguments and returns a
-string:
+This module exposes a function that takes a single `options` argument
+and retuns a bar function.
 
-- `value` - (integer) The current value of the progress bar
-- `max` - (integer) The max value of the progress bar
+These are the options:
+
+- `total` - (integer) The max value of the progress bar
+- `width` - (integer, default: 42) The width of the progress bar in chars
+- `incomplete` - (string, default: `-`) The char used to indicate the
+  incomplete part of the progress bar
+- `complete` - (string, default: `=`) The car used to indicate the
+  completed part of the progress bar
+
+### `bar(value)`
+
+Call the `bar` function with the `value` you want to the generated
+progress bar to have.
 
 ## License
 
