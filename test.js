@@ -17,6 +17,25 @@ test('empty options object', function (t) {
   t.end()
 })
 
+test('opts.total === 0', function (t) {
+  t.doesNotThrow(function () {
+    progress({total: 0})
+  })
+  t.end()
+})
+
+test('0 of 0', function (t) {
+  var bar = progress({width: 10, total: 0})
+  t.equal(bar(1), '==========')
+  t.end()
+})
+
+test('1 of 0', function (t) {
+  var bar = progress({width: 10, total: 0})
+  t.equal(bar(1), '==========')
+  t.end()
+})
+
 test('0% of 100', function (t) {
   var bar = progress({width: 10, total: 100})
   t.equal(bar(0), '----------')
