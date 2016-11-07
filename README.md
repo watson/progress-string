@@ -20,7 +20,7 @@ var diff = require('ansi-diff-stream')()
 
 var value = 0
 var total = 42
-var bar = progress({width: 120, total: total})
+var bar = progress({width: 50, total: total})
 
 setInterval(function () {
   diff.write(
@@ -28,7 +28,7 @@ setInterval(function () {
     bar(++value)
   )
   if (value === total) process.exit()
-}, 500)
+}, 250)
 
 diff.pipe(process.stdout)
 ```
