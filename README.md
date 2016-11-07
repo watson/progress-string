@@ -48,6 +48,31 @@ These are the options:
   incomplete part of the progress bar
 - `complete` - (string, default: `=`) The char used to indicate the
   completed part of the progress bar
+- `style` - (function, optional) See `options.style` below for details
+
+#### `options.style`
+
+You can provide a custom styling function to style the progress bar
+returned by the `bar` function.
+
+It will be called with two arguments: `complete` and `incomplete`. Each
+a string representing its part of the progress bar.
+
+Whatever the style function returns will be returned by the `bar`
+function.
+
+```js
+var bar = progress({
+  width: 10,
+  total: 100,
+  style: function (complete, incomplete) {
+    // add an arrow at the head of the completed part
+    return complete + '>' + incomplete
+  }
+})
+
+console.log(bar(50)) // =====>-----
+```
 
 ### `var str = bar(value)`
 

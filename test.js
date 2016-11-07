@@ -71,3 +71,13 @@ test('custom chars', function (t) {
   t.equal(bar(50), '#####*****')
   t.end()
 })
+
+test('options.style', function (t) {
+  var bar = progress({width: 10, total: 100, style: style})
+  t.equal(bar(50), '=====>-----')
+  t.end()
+
+  function style (complete, incomplete) {
+    return complete + '>' + incomplete
+  }
+})
