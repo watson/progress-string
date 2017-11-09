@@ -1,6 +1,6 @@
 {
   "name": "progress-string",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Get a progess bar as a string",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/watson/progress-string#readme",
   "coordinates": [
-    35.671789,
-    139.7374967
+    52.1630635,
+    -7.1482208
   ]
 }
