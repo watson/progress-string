@@ -12,6 +12,7 @@ module.exports = function (opts) {
 
   return function (value) {
     var chars = unit === 0 ? width : Math.floor(value / unit)
+    if (value >= total) chars = complete.length
     return style(complete.slice(0, chars), incomplete.slice(chars))
   }
 }
