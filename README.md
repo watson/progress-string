@@ -3,7 +3,7 @@
 Generate a CLI progress bar as a string that you can then output in any
 way you like.
 
-<img src="https://cdn.rawgit.com/marionebl/6ef5b206666e657cb6fd6840df652805/raw/e11ee4b0c77c69f921f5d65bbca4dc57df883022/example.svg" width="1200">
+<img src="./example/example.svg" width="1200">
 
 [![Build status](https://travis-ci.org/watson/progress-string.svg?branch=master)](https://travis-ci.org/watson/progress-string)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)

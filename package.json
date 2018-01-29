@@ -4,6 +4,7 @@
   "description": "Get a progess bar as a string",
   "main": "index.js",
   "scripts": {
+    "example": "sh example/example.sh",
     "test": "standard && node test.js"
   },
   "keywords": [
@@ -15,8 +16,9 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "ansi-diff-stream": "^1.1.1",
+    "ansi-diff-stream": "^1.2.0",
     "standard": "^8.5.0",
+    "svg-term-cli": "^2.1.1",
     "tape": "^4.6.2"
   },
   "repository": {
