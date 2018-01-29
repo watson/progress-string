@@ -2,9 +2,6 @@
   "name": "progress-string",
   "version": "1.2.2",
   "description": "Get a progess bar as a string",
-  "files": [
-    "index.js"
-  ],
   "main": "index.js",
   "scripts": {
     "example": "sh example/example.sh",
